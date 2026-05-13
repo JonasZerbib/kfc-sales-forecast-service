@@ -1,0 +1,10 @@
+node_modules/
+dist/
+.env
+*.log
+
+# Internal working documents — not part of the public repo
+original-jira-ticket.md
+documentation/implementation-plan.md
+documentation/decisions.md
+documentation/database-lifecycle.md

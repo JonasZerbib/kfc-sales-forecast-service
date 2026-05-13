@@ -1,0 +1,130 @@
+/* ── Reset / base ─────────────────────────────────────────────────────────── */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: system-ui, -apple-system, sans-serif;
+  background: #f5f5f5;
+  color: #1a1a1a;
+  min-height: 100vh;
+}
+
+/* ── Layout ───────────────────────────────────────────────────────────────── */
+.app {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+header {
+  margin-bottom: 2rem;
+}
+
+header h1 {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: #d62300; /* KFC red */
+}
+
+.subtitle {
+  margin-top: 0.25rem;
+  color: #555;
+  font-size: 0.9rem;
+}
+
+/* ── Controls ─────────────────────────────────────────────────────────────── */
+.controls {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  margin-bottom: 1.5rem;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 1.25rem 1.5rem;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  min-width: 220px;
+}
+
+.field label {
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: #555;
+}
+
+.field select,
+.field input[type="date"] {
+  padding: 0.45rem 0.65rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 0.95rem;
+  background: #fff;
+  cursor: pointer;
+}
+
+.field select:disabled,
+.field input:disabled {
+  background: #f0f0f0;
+  cursor: not-allowed;
+}
+
+/* ── Status messages ──────────────────────────────────────────────────────── */
+.status {
+  padding: 1rem;
+  color: #555;
+  font-size: 0.9rem;
+}
+
+.status.error {
+  color: #c0392b;
+  font-weight: 500;
+}
+
+/* ── Table ────────────────────────────────────────────────────────────────── */
+.table-wrapper {
+  overflow-x: auto;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background: #fff;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9rem;
+}
+
+thead {
+  background: #d62300;
+  color: #fff;
+}
+
+thead th {
+  padding: 0.65rem 1rem;
+  text-align: left;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+}
+
+tbody tr:nth-child(even) {
+  background: #fafafa;
+}
+
+tbody tr:hover {
+  background: #fff3f0;
+}
+
+tbody td {
+  padding: 0.55rem 1rem;
+  border-top: 1px solid #eee;
+}
