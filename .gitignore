@@ -4,6 +4,7 @@ dist/
 *.log
 
 # Internal working documents — not part of the public repo
-CLAUDE.md
 original-jira-ticket.md
-documentation/
+documentation/implementation-plan.md
+documentation/decisions.md
+documentation/database-lifecycle.md
